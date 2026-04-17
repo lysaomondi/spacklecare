@@ -228,7 +228,125 @@ display: block;
 }
 
 
+/*skincare style*/
+/* Header */
+.header {
+  text-align: center;
+  margin-top: 40px;
+}
+.header p{
+  font-family: sans-serif;
+  margin-top: 2px;
+}
 
+/* Container (75% width) */
+.container {
+  width: 75%;
+  margin: 40px auto;
+}
+
+/* ===== GRID FOR 4 CARDS (2x2) ===== */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 30px;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 750%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h2 {
+  margin-bottom: 10px;
+}
+
+/* Button */
+.btn {
+  display: block;
+  width: fit-content;
+  margin: 15px auto;
+  background: #ec4899;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.container1 h2{
+  text-align: center;
+  font-family: Ariel;
+  font-size: xx-large; 
+}
+.container1  p{
+  text-align: center;
+  margin-top: 2px;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+/* ===== FEATURE SECTION ===== */
+.feature-img {
+  width: 100%;
+  max-width: 950px;
+  height: 700px;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+/* ===== LAST 2 IMAGES (1 ROW 2 COL) ===== */
+.container-grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px; /* reduce space */
+  width: 60%;
+  margin: 0 auto;
+  /* remove justify-items */
+}
+
+.container-grid2 > div {
+  text-align: center;
+}
+
+.container-grid2 img {
+  width:100%;          /* fill column */
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Center text */
+.container-grid2 p {
+margin-bottom: 20px;
+font-size: 18px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .container.grid2 {
+    width: 90%;
+  }
+
+  .grid-data,
+  .container-grid2 img {
+    grid-template-columns: 1fr; /* stack on mobile */
+  }
+}
 
 
 
