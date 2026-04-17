@@ -42,6 +42,7 @@ p.center {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  margin-left: 40px;
 }
 .nav-btns {
   display: flex;
@@ -57,6 +58,7 @@ p.center {
 .cart-icon {
   font-size: 20px;
   color: #333;
+  margin-right: 40px;
 }
 .cart-icon:hover {
   color: #e91e63;
@@ -231,6 +233,7 @@ background: white;
 .footer {
   background: #fff0f0;
   padding: 30px;
+  font-size: medium;
 }
 .footer-grid {
   display: grid;
@@ -240,12 +243,32 @@ background: white;
 .footer-logo {
   width: 50px;
   border-radius: 50%;
+  margin-left: 40px;
 }
 .footer a {
   display: block;
   text-decoration: none;
   color: black;
 }
-.copy {
+.contacts p{
+    color: #0e0106;
+}
+.contacts p:hover{
+    color: #e91e63;
+}
+.links a{
+    color: #0e0106;
+}
+.links a:hover{
+    color: #e91e63;
+}
+.social-icons a{
+ color: #0e0106; 
+ font-size: 25px;
+}
+.social-icons a:hover{
+    color: #c2185b;
+}
+.copy  {
   margin-top: 20px;
 }
