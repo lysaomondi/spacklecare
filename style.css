@@ -353,31 +353,23 @@ font-size: 18px;
 
 
 
-
-
-
-
-
-
-
-
 /* SECTION shop */
-.shop {
-  padding: 40px 20px;
+.shop{
+ width: 75%; 
+ margin: 0 auto;
+}
+
+.shop h1 {
+  padding:20px;
   text-align: center;
+  font-family: Arial;
 }
-
-/* TITLES */
-.title {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.subtitle {
+.shop h2{
+  text-align: center;
+  font-family: sans-serif;
   font-size: 20px;
-  font-weight: bold;
-  margin: 30px 0 20px;
+  font-weight: small;
+  margin-bottom: 20px;
 }
 
 /* GRID */
@@ -415,6 +407,8 @@ font-size: 18px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: 0.3s;
+  width: 350px;
+  margin-bottom: 30px;
 }
 
 .card:hover {
@@ -424,7 +418,7 @@ font-size: 18px;
 /* IMAGE */
 .card img {
   width: 100%;
-  height: 220px;
+  height: 350px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -433,15 +427,20 @@ font-size: 18px;
 .card h3 {
   margin: 10px 0 5px;
   font-size: 16px;
+  text-align: center;
 }
 
 .card p {
   margin-bottom: 10px;
   font-weight: bold;
+  text-align: center;
 }
 
 /* BUTTON */
-.card button {
+
+ .card button{
+  display: block;
+  margin: 15px auto;  /* ✅ centers button */
   background: #ec4899;
   color: white;
   border: none;
@@ -449,9 +448,8 @@ font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
 }
-
 .card button:hover {
-  background: #db2777;
+  background: #c2185b;
 }
 
 
