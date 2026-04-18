@@ -19,7 +19,7 @@
 
     <div class="nav-btns">
       <a href="book.html" class="book-btn">Book Appointment</a>
-      <a href="shop.html" class="cart-icon">
+      <a href="cart.html" class="cart-icon">
         <i class="fa-solid fa-cart-shopping"></i>
       </a>
     </div>
@@ -32,56 +32,50 @@
   </div>
 </nav>
 
-<form class="form-container">
 
-  <h2>Book Appointment</h2>
+<div class="cart-container" id="cart">
 
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
+  <h1>Your Cart</h1>
+
+  <!-- ITEM 1 -->
+  <div class="cart-item">
+    <img src="images/img16.jpg">
+
+    <div class="cart-details">
+      <h2>Dry Skin Product</h2>
+      <p>Ksh 1200</p>
+    </div>
+
+    <button class="remove-btn" onclick="removeItem(this)">Remove</button>
   </div>
 
-  <div class="form-group">
-    <label for="email">Email Address</label>
-    <input type="email" id="email" name="email" required>
+  <!-- ITEM 2 -->
+  <div class="cart-item">
+    <img src="images/img17.jpg">
+
+    <div class="cart-details">
+      <h2>Oily Skin Product</h2>
+      <p>Ksh 1500</p>
+    </div>
+
+    <button class="remove-btn" onclick="removeItem(this)">Remove</button>
   </div>
 
-  <div class="form-group">
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" required>
+  <!-- TOTAL -->
+  <div class="cart-total">
+    <h2 id="total">Total: Ksh 2700</h2>
+
+    <button class="checkout-btn" onclick="checkout()">
+      Checkout
+    </button>
   </div>
 
-  <div class="form-group">
-    <select id="consultationType" name="consultationType" required>
-      <option value="" disabled selected>Select Consultation Type</option>
-      <option value="general">General Skincare Consultation</option>
-      <option value="acne">Acne-Focused Consultation</option>
-      <option value="anti-aging">Anti-Aging Consultation</option>
-      <option value="sensitive">Sensitive Skin Consultation</option>
-      <option value="hydration">Hydration-Focused Consultation</option>
-      <option value="dryness">Dryness</option>
-      <option value="darkspot">Darkspot</option>
-      <option value="custom">Custom Consultation</option>
-    </select>
-  </div>
+</div>
 
-  <button type="submit">Book Now</button>
-
-</form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- MESSAGE -->
+<div class="message-box" id="message">
+  Thank you for shopping SpackleCare 💖
+</div>
 
 
 
